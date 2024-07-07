@@ -8,11 +8,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function Index(){
   return(
     <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-              <Route path="/*" element={<App />} />
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </BrowserRouter>
     </React.StrictMode>
   )
 };
