@@ -20,6 +20,8 @@
   
 .image-container.loaded img {
   opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .image-container .fallback {
@@ -36,4 +38,12 @@
   text-align: center;
   padding: 10px;
   border-radius: 8px;
+}
+
+.img-responsive{
+
+}
+
+.container-big-left-home{
+  margin-left: min(max(10px, 5vw), 30px);
 }

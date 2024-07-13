@@ -1,0 +1,47 @@
+.topbar {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: transparent;
+    color: var(--app-secondary-color); 
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+  
+.container-page{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        min-height: 40px;
+        max-height: 80px;
+        padding: 5px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .topbar {
+        min-height: 35px;
+        max-height: 70px;
+        padding: 5px;
+    }
+}
