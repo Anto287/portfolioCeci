@@ -5,7 +5,7 @@ const { DefinePlugin } = require('webpack');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
-  const basename = isProduction ? '/sitoPolle' : '';
+  const basename = isProduction ? '/portfolioCeci' : '';
 
   return {
     entry: path.join(__dirname, 'src', 'index.js'),
