@@ -9,9 +9,9 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const App = () => {
   return (
     <Routes>
-      <Route path="portafoglioCeci/" element={<Layout />}>
+      <Route path="portfolioCeci/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path='portafoglioCeci/home' element={<Home />} />
+        <Route path='portfolioCeci/home' element={<Home />} />
       </Route>
     </Routes>
   );

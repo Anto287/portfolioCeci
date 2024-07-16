@@ -4,9 +4,9 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:Anto287/portafoglioCeci.git"
+    "url": "git@github.com:Anto287/portfolioCeci.git"
   },
-  "homepage": "https://Anto287.github.io/portafoglioCeci",
+  "homepage": "https://Anto287.github.io/portfolioCeci",
   "description": "",
   "main": "index.js",
   "scripts": {
