@@ -6,12 +6,10 @@ import myIcon from '@assets/icon/icon.png';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const basename = process.env.BASENAME;
-
 function Index() {
   return (
     <React.StrictMode>
-      <BrowserRouter basename={basename}>
+      <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/*" element={<App />} />
