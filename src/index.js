@@ -4,24 +4,23 @@ const App = React.lazy(() => import('./App'));
 import '@styles/App.css';
 import myIcon from '@assets/icon/icon.png';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-const basename = process.env.BASENAME || '';
+import { HashRouter } from 'react-router-dom';
 
 function Index() {
   return (
     <React.StrictMode>
-      <BrowserRouter basename={basename}>
+      <HashRouter>
         <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route path="/*" element={<App />} />
-          </Routes>
+          <App />
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   );
 }
 
+if (!window.location.hash) {
+  window.location = window.location + '#/';
+}
 
 const link = document.createElement('link');
 link.rel = 'icon';
