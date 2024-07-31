@@ -30,6 +30,10 @@
     gap: 5%;
 }
 
+p{
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .topbar {
         min-height: 40px;

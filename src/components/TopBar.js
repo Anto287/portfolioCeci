@@ -6,13 +6,13 @@ const ImgLoader = () => {
       <div className="topbar">
         <div className='container-page'>
             <p>Cecilia Ferrari</p>
-            <p>About</p>
-            <p>Archive</p>
+            <p>(About)</p>
+            <p>(Archive)</p>
         </div>
         <div className='container-contact'>
-            <p>Email</p>
-            <p>Instagram</p>
-            <p>Linkedin</p>
+            <p>(Email)</p>
+            <p>(Instagram)</p>
+            <p>(Linkedin)</p>
         </div>
       </div>
     );

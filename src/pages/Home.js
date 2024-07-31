@@ -1,7 +1,10 @@
 import React from 'react';
 import icon from '@images/img_home/image_1.png';
+import icon2 from '@images/img_home/image_2.png';
+
 import ImgLoader from '@components/ImgLoader';
 import TopBar from '@components/TopBar';
+import Carousel from '@components/Carusel';
 
 import '@styles/Home.css';
 
@@ -16,30 +19,84 @@ const Home = () => {
       <div className='background-container' style={backgroundStyle}>
         <div className='overlay'>
           <div className='container-top-text'>
-            <p>
-              Cecilia Ferrari is an interior and spatial designer working in a variety  of media, from conceptual creation of installations in the spaces to events. She is currently studying Interior and Spatial design Master in politecnico di milano.
-              Based in milan, italy. Actually in barcelona, spain.
-            </p>
+            <b>
+              CECILIA FERRARI IS AN INTERIOR AND SPATIAL DESIGNER WORKING IN A VARIETY  OF MEDIA, FROM CONCEPTUAL CREATION OF INSTALLATIONS IN THE SPACES TO EVENTS. 
+              SHE IS CURRENTLY STUDYING INTERIOR AND SPATIAL DESIGN MASTER IN POLITECNICO DI MILANO. 
+              BASED IN MILAN, ITALY. ACTUALLY IN BARCELONA, SPAIN.
+            </b>
           </div>
+
           <div className='container-img-home'>
-            <div className="container-img">
-              <ImgLoader
-                src={icon}
-                containerClass="container-big-left-home"
-                imgClass="img-responsive"
-                style={{width: '55%', height: '50%', backgroundColor: '#cccccc'}}
-                styleImg={{width: '100%', height: '100%', borderRadius: '8px'}}
-              />
-              <div className='container-text-home'>
-                <div className='container-text-title'>
-                  <b>HAPPINESS IS VITAL</b>
-                  <p>(2023)</p>
-                </div>
+            <div className='card'>
+              <div className='card-title'>
+                <b>MOLDING LIFE</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
                 <p>What if two opposite concepts such as happiness and mold were associated?</p>
               </div>
             </div>
+            
+            <div className='card'>
+              <div className='card-title'>
+                <b>BAGNO ROSA</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Collect plastic, release fun.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-title'>
+                <b>METASENSO</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Go further the common sense of things:  the search for the essence.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-title'>
+                <b>QCLUB</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Immersive experience and clubbing event organize by VUOTOCOLLETTIVO + SETTEMENOUNO.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-title'>
+                <b>SPAZIOSERRA</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Set-up and the opening event by VUOTOCOLLETTIVO for "Students Living in Case Milanesissime",a  project in collaboration with @alvaraaltissimo.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-title'>
+                <b>DESIGN SENZA FILI</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Set-up and the opening event by VUOTOCOLLETTIVO for "Students Living in Case Milanesissime",a  project in collaboration with @alvaraaltissimo.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-title'>
+                <b>MATERIA BANQUET</b>
+              </div>
+              <Carousel images={[icon, icon2]}/>
+              <div className='card-description'>
+                <p>Set-up and the opening event by VUOTOCOLLETTIVO for "Students Living in Case Milanesissime",a  project in collaboration with @alvaraaltissimo.</p>
+              </div>
+            </div>
           </div>
-          
         </div>
       </div>
     </div>

@@ -1,0 +1,8 @@
+.container-about{
+    width: 100%;
+    margin-left: min(max(10px, 5vw), 30px);
+    margin-right: min(max(10px, 5vw), 30px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
