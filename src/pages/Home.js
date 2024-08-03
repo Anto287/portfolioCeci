@@ -2,7 +2,6 @@ import React from 'react';
 import icon from '@images/img_home/image_1.png';
 import icon2 from '@images/img_home/image_2.png';
 
-import ImgLoader from '@components/ImgLoader';
 import TopBar from '@components/TopBar';
 import Carousel from '@components/Carusel';
 
